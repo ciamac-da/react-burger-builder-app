@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme)=>({
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        margin: "5px 0"
+        margin: "5px 0",
     },
 
     Label: {

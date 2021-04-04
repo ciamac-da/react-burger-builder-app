@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import myStyles from "./BuildControlStyle"
+import myStyles from "./BuildControlStyle";
 
 
 const BuildControl = (props) => {

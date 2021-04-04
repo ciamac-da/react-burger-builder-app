@@ -9,7 +9,10 @@ const useStyles = makeStyles((theme)=>({
         flexFlow:"column",
         alignItems:"center",
         boxShadow:"0 2px 1px white",
-        padding:"10px 0"
+        padding:"10px 0",
+        background: "linear-gradient(#F08E4A, #e27b36)",
+        borderRadius:"10px"
+        
     }
   }));
 
