@@ -4,9 +4,9 @@ import Burger from "../Burger/Burger";
 import BurgerControls from "../Burger/BuildControls/BuildControls";
 
 const INGREDIENT_PRICES = {
-  salad: 1,
-  bacon: 1.2,
-  cheese: 0.8,
+  salad: 1.5,
+  bacon: 1.7,
+  cheese: 1,
   meat: 2,
 };
 
@@ -60,9 +60,16 @@ class BurgerBuilder extends Component {
   }
 
   for (let key in disabledInfo){
-      disabledInfo[key] = disabledInfo[key] <= 0
+      disabledInfo[key] = disabledInfo[key] <= 0 
   }
 
+/*   let disabledMaxInfo = {
+    ...this.state.ingredients
+}
+
+for (let keys in disabledMaxInfo){
+    disabledInfo[keys] = disabledInfo[keys] > 20 
+} */
     return (
       <Aux>
         <Burger ingredients={this.state.ingredients} />
@@ -70,6 +77,7 @@ class BurgerBuilder extends Component {
         ingredientAdded={this.addIngredientHandler} 
         ingredientRemoved={this.removeIngredientHandler} 
         disabled={disabledInfo}
+        //disabledMax={disabledMaxInfo}
         price={this.state.totalPrice}
         />
       </Aux>

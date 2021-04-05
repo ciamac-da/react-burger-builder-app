@@ -1,15 +1,16 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import myStyle from "./BuildControlsStyle";
 import BuildControl from './BuildControl/BuildControl';
-import {Typography} from "@material-ui/core";
+import {Typography, Button} from "@material-ui/core";
 
 
 
 const controls = [
-    { label: "Salad", type:"salad"},
-    { label: "Bacon", type:"bacon"},
-    { label: "Cheese", type:"cheese"},
-    { label: "Meat", type:"meat"}
+    { label: "Salad" , type:"salad"  ,ingPrice:" : 1.5$"},
+    { label: "Bacon" , type:"bacon"  ,ingPrice:" : 1.7$"},
+    { label: "Cheese", type:"cheese" ,ingPrice:" : 1$"},
+    { label: "Meat"  , type:"meat"   ,ingPrice:" : 2$"}
 ]
 const BuildControls = (props) => {
     
@@ -17,17 +18,20 @@ const BuildControls = (props) => {
 
     return ( 
         <div className={classes.BuildControls}>
-        <Typography> Current Price: {props.price.toFixed(2)}</Typography>
+        <Typography className={classes.MyTypo}> Current Price : {props.price.toFixed(2)}$</Typography>
         {controls.map(ctrl => (
             <BuildControl 
             key={ctrl.label} 
-            label={ctrl.label} 
+            label={ctrl.label + ctrl.ingPrice} 
             added={()=> props.ingredientAdded(ctrl.type)} 
             removed={()=> props.ingredientRemoved(ctrl.type)} 
             disabled={props.disabled[ctrl.type]}
+          //  disabledMax={props.disabledMax[ctrl.type]}
             />
         ))}
+        <Button variant="contained" className={classes.MyButton}>Order Now</Button>
         </div>
+
      );
 }
  

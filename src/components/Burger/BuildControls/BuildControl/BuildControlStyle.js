@@ -10,10 +10,10 @@ const useStyles = makeStyles((theme)=>({
         margin: "5px 0",
     },
 
-    Label: {
+    LabelTypo: {
         padding: "10px",
-        fontWeight: "bold",
-        width: "80px"
+        width: "90px",
+        fontWeight:"bolder"
     },
     More:{
         backgroundColor:"#ff3d00",

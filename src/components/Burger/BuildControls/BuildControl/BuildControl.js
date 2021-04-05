@@ -1,6 +1,8 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+import {Fab, Typography} from "@material-ui/core/";
 import myStyles from "./BuildControlStyle";
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 
 
 const BuildControl = (props) => {
@@ -8,22 +10,24 @@ const BuildControl = (props) => {
     const classes = myStyles();
   return (
     <div className={classes.BuildControl}>
-      <div className={classes.Label}>{props.label} </div>
-      <Button 
+      <Typography className={classes.LabelTypo}>{props.label} </Typography>
+      <Fab 
       className={classes.More} 
       variant="contained" 
       onClick={props.removed}
       disabled={props.disabled}
       >
-        Less
-      </Button>
-      <Button 
+      <RemoveIcon />
+      </Fab>
+      <Fab 
       className={classes.Less} 
       variant="contained" 
+      aria-label="add"
       onClick={props.added}
+     // disabled={props.disabledMax}
       >
-        More
-      </Button>
+      <AddIcon />
+      </Fab>
     </div>
   );
 };
