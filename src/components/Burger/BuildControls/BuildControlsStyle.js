@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme)=>({
     MyTypo:{
-        fontWeight:"bolder",
-        color:"#000000",
-        margin:"20px 0px 20px 0px",
-        fontSize:"20px"
+        fontWeight:"bolder !important",
+        color:"#000000  !important",
+        margin:"20px 0px 20px 0px  !important",
+        fontSize:"20px !important"
     },
     BuildControls:{
         margin:"auto",
@@ -23,11 +23,12 @@ const useStyles = makeStyles((theme)=>({
         margin:"20px 0px 20px 0px !important",
         background:"#ff9800 !important",
         color:"#000000 !important",
-        transform: "translate 20px",
+        transform: "translateX(0px) !important",
+        transition: ".8s",
         fontWeight:"bolder !important",
         "&:hover":{
-            color:"#615f66 !important",
-        transform: "translateX 20px",
+        transform: "translateX(10px) !important",
+        transition: ".8s",
 
         }
     }
