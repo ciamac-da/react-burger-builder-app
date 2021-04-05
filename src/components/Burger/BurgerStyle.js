@@ -19,16 +19,15 @@ const useStyles = makeStyles((theme)=>({
           },  
           [theme.breakpoints.down('md')]: {
               width: "60% !important",
-              height:"350px",
+
           }, 
           [theme.breakpoints.up('lg')]: {
               width: "60%  !important",
-              height:"350px",
-
+              height:"350px !important",
           }, 
           [theme.breakpoints.up('xl')]: {
               width: "50%  !important",
-              height:"550px",
+              height:"350px !important",
           }, 
       },
 
