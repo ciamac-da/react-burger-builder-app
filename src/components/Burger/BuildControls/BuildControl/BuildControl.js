@@ -9,10 +9,14 @@ const BuildControl = (props) => {
   return (
     <div className={classes.BuildControl}>
       <div className={classes.Label}>{props.label} </div>
-      <Button className={classes.More} variant="outlined" color="secondary">
+      <Button className={classes.More} variant="contained" >
         Less
       </Button>
-      <Button className={classes.Less} variant="outlined" color="secondary">
+      <Button 
+      className={classes.Less} 
+      variant="contained" 
+      onClick={props.added}
+      >
         More
       </Button>
     </div>

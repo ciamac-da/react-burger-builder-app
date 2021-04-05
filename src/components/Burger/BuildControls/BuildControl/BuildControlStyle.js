@@ -14,6 +14,20 @@ const useStyles = makeStyles((theme)=>({
         padding: "10px",
         fontWeight: "bold",
         width: "80px"
+    },
+    More:{
+        backgroundColor:"#ff3d00",
+        color:"#ffffff",
+        margin:"4px",
+        fontWeight:"bolder"
+    },
+    Less:{
+        backgroundColor:"#2e7031",
+        color:"#ffffff",
+        margin:"4px",
+        fontWeight:"bolder"
+
+
     }
     
 
