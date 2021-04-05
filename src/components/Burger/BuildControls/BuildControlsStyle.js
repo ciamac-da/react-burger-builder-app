@@ -9,26 +9,26 @@ const useStyles = makeStyles((theme)=>({
         fontSize:"20px !important"
     },
     BuildControls:{
-        margin:"auto",
-        width:"100%",
-        display:"flex",
-        flexFlow:"column",
-        alignItems:"center",
-        boxShadow:"0 2px 1px white",
-        padding:"10px 0",
-        background: "linear-gradient(#F08E4A, #e27b36)",
-        borderRadius:"10px"
+        margin:"auto  !important",
+        width:"100%  !important",
+        display:"flex  !important",
+        flexFlow:"column  !important",
+        alignItems:"center  !important",
+        boxShadow:"0 2px 1px white  !important",
+        padding:"10px 0  !important",
+        background: "linear-gradient(#F08E4A, #e27b36)  !important",
+        borderRadius:"10px !important"
     },
     MyButton:{
         margin:"20px 0px 20px 0px !important",
         background:"#ff9800 !important",
         color:"#000000 !important",
         transform: "translateX(0px) !important",
-        transition: ".8s",
+        transition: ".8s !important",
         fontWeight:"bolder !important",
         "&:hover":{
         transform: "translateX(10px) !important",
-        transition: ".8s",
+        transition: ".8s !important",
 
         }
     }

@@ -1,8 +1,9 @@
 import React from "react";
-import "./Burger.css";
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
+import myStyle from "./BurgerStyle";
 
 const Burger = (props) => {
+  const classes = myStyle();
   let transformedIngredients = Object.keys(props.ingredients).map((igKey) => {
     return [...Array(props.ingredients[igKey])].map((_, index) => {
       return <BurgerIngredient key={igKey + index} type={igKey} />;
@@ -17,7 +18,7 @@ const Burger = (props) => {
   }
 
   return (
-    <div className="Burger">
+    <div className={classes.Burger}>
       <BurgerIngredient type="bread-top" />
           {transformedIngredients}
       <BurgerIngredient type="bread-bottom" />
