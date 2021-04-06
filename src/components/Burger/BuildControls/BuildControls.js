@@ -29,7 +29,13 @@ const BuildControls = (props) => {
           //  disabledMax={props.disabledMax[ctrl.type]}
             />
         ))}
-        <Button variant="contained" className={classes.MyButton}>Order Now</Button>
+        <Button 
+        variant="contained" 
+        className={classes.MyButton}
+        disabled={!props.purchaseable}
+        >
+        Order Now
+        </Button>
         </div>
 
      );
