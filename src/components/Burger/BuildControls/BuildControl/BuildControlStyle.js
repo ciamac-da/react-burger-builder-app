@@ -20,15 +20,25 @@ const useStyles = makeStyles((theme)=>({
         backgroundColor:"#ff3d00",
         color:"#ffffff",
         margin:"4px",
-        fontWeight:"bolder"
+        transition:"1s",
+        fontWeight:"bolder",
+        "&:hover":{
+        color:"#ff3d00",
+        backgroundColor:"#fff",
+        transition:"1s"
+        }
     },
     Less:{
         backgroundColor:"#2e7031",
         color:"#ffffff",
         margin:"4px",
-        fontWeight:"bolder"
-
-
+        fontWeight:"bolder",
+        transition:"1s",
+        "&:hover":{
+            color:"#2e7031",
+            backgroundColor:"#fff",
+            transition:"1s"
+            }
     }
     
 

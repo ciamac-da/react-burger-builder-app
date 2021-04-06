@@ -26,7 +26,7 @@ const useStyles = withStyles((theme) => ({
         }, 
   },
   BreadTop: {
-    height: "35% !important",
+    height: "20% !important",
     width: "80% !important",
     background: "linear-gradient(#bc581e, #e27b36) !important",
     borderRadius: "50% 50% 0 0 !important",
@@ -48,7 +48,7 @@ const useStyles = withStyles((theme) => ({
       }, 
   },
   Seeds1: {
-    width: "10% !important",
+    width: "8% !important",
     height: "15% !important",
     position: "absolute !important",
     backgroundColor: "white !important",
@@ -57,6 +57,18 @@ const useStyles = withStyles((theme) => ({
     borderRadius: "40% !important",
     transform: "rotate(-20deg) !important",
     boxShadow: "inset -2px -3px #c9c9c9 !important",
+    [theme.breakpoints.down('sm')]: {
+      width: "8% !important",
+      height: "7% !important",
+    },
+    [theme.breakpoints.up('md')]: {
+    },  
+    [theme.breakpoints.down('md')]: {
+    }, 
+    [theme.breakpoints.up('lg')]: {
+    }, 
+    [theme.breakpoints.up('xl')]: {
+    }, 
     "&::after": {
       content: '""!important',
       width: "100% !important",
@@ -69,6 +81,7 @@ const useStyles = withStyles((theme) => ({
       transform: "rotate(60deg) !important",
       boxShadow: "inset -1px 2px #c9c9c9 !important",
       [theme.breakpoints.down('sm')]: {
+       
       },
       [theme.breakpoints.up('md')]: {
       },  
@@ -98,6 +111,7 @@ const useStyles = withStyles((theme) => ({
       transform: "rotate(60deg) !important",
       boxShadow: "inset -1px -3px #c9c9c9 !important",
       [theme.breakpoints.down('sm')]: {
+       
       },
       [theme.breakpoints.up('md')]: {
         width: "80% !important",
@@ -124,7 +138,7 @@ const useStyles = withStyles((theme) => ({
     },
   },
   Seeds2: {
-    width: "10% !important",
+    width: "8% !important",
     height: "15% !important",
     position: "absolute !important",
     backgroundColor: "white !important",
@@ -133,6 +147,18 @@ const useStyles = withStyles((theme) => ({
     borderRadius: "40% !important",
     transform: "rotate(10deg) !important",
     boxShadow: "inset -3px 0 #c9c9c9 !important",
+    [theme.breakpoints.down('sm')]: {
+      width: "8% !important",
+      height: "7% !important",
+    },
+    [theme.breakpoints.up('md')]: {
+    },  
+    [theme.breakpoints.down('md')]: {
+    }, 
+    [theme.breakpoints.up('lg')]: {
+    }, 
+    [theme.breakpoints.up('xl')]: {
+    }, 
     "&::before": {
       content: '""!important',
       width: "100% !important",
@@ -145,6 +171,8 @@ const useStyles = withStyles((theme) => ({
       transform: "rotate(90deg) !important",
       boxShadow: "inset 1px 3px #c9c9c9 !important",
       [theme.breakpoints.down('sm')]: {
+        width: "70% !important",
+        height: "50% !important",
       },
       [theme.breakpoints.up('md')]: {
       },  
