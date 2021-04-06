@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Aux from "../../hoc/aux";
 import Burger from "../Burger/Burger";
 import BurgerControls from "../Burger/BuildControls/BuildControls";
+import Modal from "../UI/Modal/Modal";
+import OrderSummary from '../Burger/OrderSummary/OrderSummary';
 
 const INGREDIENT_PRICES = {
   salad: 1.5,
@@ -85,6 +87,9 @@ for (let keys in disabledMaxInfo){
 } */
     return (
       <Aux>
+        <Modal>
+          <OrderSummary ingredients={this.state.ingredients} />
+        </Modal>
         <Burger ingredients={this.state.ingredients} />
         <BurgerControls 
         ingredientAdded={this.addIngredientHandler} 
