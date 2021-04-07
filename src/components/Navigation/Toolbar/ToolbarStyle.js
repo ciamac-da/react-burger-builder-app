@@ -17,7 +17,30 @@ const useStyles = makeStyles((theme)=>({
   },
   Nav:{
       height:"100px"
-  }
+  },
+  BurgerLogo:{
+    display:"flex",
+    position:"relative !important",
+    right:"480px !important",
+    top:"-5px",
+    [theme.breakpoints.down('sm')]: {
+        right:"15px !important",
+        top:"0px",
+    },
+    [theme.breakpoints.up('sm')]: {
+    },
+    [theme.breakpoints.up('md')]: {
+
+    },
+    [theme.breakpoints.down('md')]: {
+    },
+    [theme.breakpoints.up('lg')]: {
+        right: "400px !important",
+    },
+    [theme.breakpoints.up('xl')]: {
+        right: "700px !impotant",
+    },
+    },
   }));
 
   export default useStyles;
