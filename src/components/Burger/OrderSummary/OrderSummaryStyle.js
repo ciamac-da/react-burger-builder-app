@@ -31,6 +31,13 @@ const useStyles = makeStyles((theme)=>({
         fontWeight:"bolder"
 
     },
+    TotalPrice:{
+        display: "flex",
+        justifyContent: "center",
+        marginBottom:"10px",
+        color:"#ff9800 !important",
+        fontSize:"20px"
+    },
     ContinueTypo:{
        marginTop:"10px",
        display:"flex",

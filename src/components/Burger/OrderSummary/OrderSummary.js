@@ -9,7 +9,7 @@ const OrderSummary = (props) => {
     const ingredientSummary = Object.keys(props.ingredients)
     .map(igKey => {
         return (
-            <ListItem className={classes.List} key={igKey}><span className={classes.Span}>{igKey}</span>: {props.ingredients[igKey]}</ListItem>
+            <ListItem className={classes.List} key={igKey}><span className={classes.Span}>{igKey}</span> : {props.ingredients[igKey]}</ListItem>
         )
     })
     return ( 
@@ -23,6 +23,7 @@ const OrderSummary = (props) => {
         <ListItem className={classes.Ul} >
         {ingredientSummary}
         </ListItem>
+        <Typography className={classes.TotalPrice}><strong>Total Price : {props.price.toFixed(2)}$</strong></Typography>
         </List>
         <Typography className={classes.ContinueTypo}>Continue to checkout?</Typography>
         <div className={classes.BtnDiv}>

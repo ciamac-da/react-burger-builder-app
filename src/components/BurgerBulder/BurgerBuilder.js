@@ -107,6 +107,7 @@ for (let keys in disabledMaxInfo){
           ingredients={this.state.ingredients} 
           purchaseCancelled={this.purchasingCancelHandler}  
           purchaseContinued={this.purchasingContinueHandler}  
+          price={this.state.totalPrice}
           />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
