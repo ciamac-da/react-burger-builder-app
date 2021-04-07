@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme)=>({
     BuildControls:{
         margin:"auto  !important",
         width:"100%  !important",
+        position:"relative",
+        top:"60px",
         display:"flex  !important",
         flexFlow:"column  !important",
         alignItems:"center  !important",

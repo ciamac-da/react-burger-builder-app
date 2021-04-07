@@ -7,6 +7,8 @@ const useStyles = makeStyles((theme)=>({
         height: "250px",
         margin: "auto",
         overflow: "auto",
+        position:"relative",
+        top:"60px",
         fontWeight: "bolder",
         textAlign: "center",
         fontSize: "1.2em",
@@ -30,6 +32,7 @@ const useStyles = makeStyles((theme)=>({
               height:"350px !important",
           }, 
       },
+     
 
   }));
 

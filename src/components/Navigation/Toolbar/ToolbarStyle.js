@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme)=>({
     right:"480px !important",
     top:"-5px",
     [theme.breakpoints.down('sm')]: {
+        display:"none !important",
         right:"15px !important",
         top:"0px",
     },
