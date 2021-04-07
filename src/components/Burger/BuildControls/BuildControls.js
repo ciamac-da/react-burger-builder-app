@@ -33,6 +33,7 @@ const BuildControls = (props) => {
         variant="contained" 
         className={classes.MyButton}
         disabled={!props.purchaseable}
+        onClick={props.ordered}
         >
         Order Now
         </Button>
