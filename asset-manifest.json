@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-burger-builder-app/static/js/main.b52284b8.chunk.js",
-    "main.js.map": "/react-burger-builder-app/static/js/main.b52284b8.chunk.js.map",
+    "main.js": "/react-burger-builder-app/static/js/main.59b4a03c.chunk.js",
+    "main.js.map": "/react-burger-builder-app/static/js/main.59b4a03c.chunk.js.map",
     "runtime-main.js": "/react-burger-builder-app/static/js/runtime-main.f904e059.js",
     "runtime-main.js.map": "/react-burger-builder-app/static/js/runtime-main.f904e059.js.map",
     "static/js/2.a96b784d.chunk.js": "/react-burger-builder-app/static/js/2.a96b784d.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.f904e059.js",
     "static/js/2.a96b784d.chunk.js",
-    "static/js/main.b52284b8.chunk.js"
+    "static/js/main.59b4a03c.chunk.js"
   ]
 }
