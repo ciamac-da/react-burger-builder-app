@@ -1,7 +1,7 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 
 
-const useStyles = makeStyles((theme)=>({
+const useStyles = withStyles((theme)=>({
     content:{
         marginTop:"60px"
     }
