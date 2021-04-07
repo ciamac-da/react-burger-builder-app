@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme)=>({
         boxSizing: "border-box",
         transition: "all 0.3s ease-out",
         [theme.breakpoints.down('sm')]: {
+          width: "95%",
+          left: "calc(50% - 180px)",
                 },
                 [theme.breakpoints.up('md')]: {
                 },  

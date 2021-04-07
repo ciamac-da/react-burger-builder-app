@@ -9,15 +9,18 @@ const OrderSummary = (props) => {
     const ingredientSummary = Object.keys(props.ingredients)
     .map(igKey => {
         return (
-            <ListItem key={igKey}><span className={classes.mySpan}>{igKey}</span>: {props.ingredients[igKey]}</ListItem>
+            <ListItem className={classes.List} key={igKey}><span className={classes.Span}>{igKey}</span>: {props.ingredients[igKey]}</ListItem>
         )
     })
     return ( 
         <Aux>
-        <Typography variant="h5">Your Order</Typography>
-        <Typography >A delicious Burger with the following ingredients:</Typography>
-        <List component="nav" aria-label="main mailbox folders">
-        <ListItem>
+        <Typography className={classes.H5} variant="h5">
+        Your Order
+        <img className={classes.BurgerLogo} src="https://img.icons8.com/doodle/32/000000/hamburger.png"/>
+        </Typography>
+        <Typography className={classes.Subscribe} >A delicious Burger with the following ingredients:</Typography>
+        <List>
+        <ListItem className={classes.Ul} >
         {ingredientSummary}
         </ListItem>
         </List>
