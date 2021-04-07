@@ -1,6 +1,6 @@
 import React from 'react';
 import Aux from '../../../hoc/aux';
-import { Typography, List, ListItem, ListItemText } from '@material-ui/core/';
+import { Typography, List, ListItem, Button } from '@material-ui/core/';
 import myStyle from "./OrderSummaryStyle";
 
 const OrderSummary = (props) => {
@@ -24,7 +24,11 @@ const OrderSummary = (props) => {
         {ingredientSummary}
         </ListItem>
         </List>
-        <Typography>Continue to checkout?</Typography>
+        <Typography className={classes.ContinueTypo}>Continue to checkout?</Typography>
+        <div className={classes.BtnDiv}>
+        <Button onClick={props.purchaseCancelled} className={classes.CancelButton}>&nbsp;&nbsp;Cancel&nbsp;&nbsp;</Button>
+        <Button onClick={props.purchaseContinued} className={classes.ContinueButton}>Continue</Button>
+        </div>
         </Aux>
      );
 }

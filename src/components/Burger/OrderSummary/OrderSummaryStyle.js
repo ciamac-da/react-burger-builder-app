@@ -27,7 +27,48 @@ const useStyles = makeStyles((theme)=>({
     },
     Subscribe:{
         textAlign:"center",
-        marginTop:"10px"
+        marginTop:"10px",
+        fontWeight:"bolder"
+
+    },
+    ContinueTypo:{
+       marginTop:"10px",
+       display:"flex",
+       justifyContent:"center",
+       fontWeight:"bolder"
+    },
+    BtnDiv:{
+        display:"flex ",
+        justifyContent:"space-around",
+    },
+    ContinueButton:{
+        margin:"20px 0px 20px 0px !important",
+        background:"#2e7031!important",
+        color:"#fff !important",
+        transform: "translateX(0px) !important",
+        transition: ".8s !important",
+        fontWeight:"bolder !important",
+        "&:hover":{
+        transform: "translateX(10px) !important",
+        transition: ".8s !important",
+        background:"#ff9800 !important",
+        color:"#000000 !important",
+        }
+    },
+    CancelButton:{
+        margin:"20px 0px 20px 0px !important",
+        background:"#ff3d00 !important",
+        color:"#fff !important",
+        transform: "translateX(0px) !important",
+        transition: ".8s !important",
+        fontWeight:"bolder !important",
+        "&:hover":{
+        transform: "translateX(10px) !important",
+        transition: ".8s !important",
+        background:"#ff9800 !important",
+        color:"#000000 !important",
+
+        }
     }
   }));
 
