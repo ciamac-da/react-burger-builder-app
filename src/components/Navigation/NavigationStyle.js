@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
             textAlign: "center",
         },
         "&:hover": {
-            color: "#ff9800",
+            color: "#111111 !important",
             borderRadius: "10px",
            
         }
@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
             textAlign: "center",
         },
         "&:hover": {
-            color: "#111111",
+            color: "#111111 !important",
             borderRadius: "10px",
         }
     },

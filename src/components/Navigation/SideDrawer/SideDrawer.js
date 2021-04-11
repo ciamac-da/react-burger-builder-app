@@ -2,6 +2,7 @@ import React from "react";
 import myStyle from "./SideDrawerStyle";
 import { List, ListItem } from "@material-ui/core/";
 import Backdrop from "../../UI/Backdrop/Backdrop";
+import { NavLink } from 'react-router-dom';
 import Aux from "../../../hoc/Aux/Aux";
 
 const SideDrawer = (props) => {
@@ -20,8 +21,35 @@ const SideDrawer = (props) => {
         />
         <div className={classes.Navi}>
           <List className={classes.List}>
-            <ListItem className={classes.Item1}> Burger Builder </ListItem>{" "}
-            <ListItem className={classes.Item2}> Checkout </ListItem>{" "}
+            <ListItem 
+            className={classes.Item1}
+            > 
+            <NavLink 
+         to="/"
+         activeStyle={{
+         fontWeight: "bold",
+         color: "black",
+         textDecoration:"none"
+          }}
+         >
+            Burger Builder 
+            </NavLink>
+            </ListItem>{" "}
+            <ListItem 
+            className={classes.Item2}
+            > 
+            <NavLink
+            className={classes.checkout}
+              to="/checkout"
+              activeStyle={{
+              fontWeight: "bold",
+              color: "black",
+              textDecoration:"none"
+          }}
+            >
+            Checkout 
+            </NavLink>
+            </ListItem>{" "}
           </List>{" "}
         </div>{" "}
       </div>{" "}

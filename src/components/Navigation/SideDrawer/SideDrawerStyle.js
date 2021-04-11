@@ -42,6 +42,10 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         left: "30px"
     },
+    checkout:{
+        color:"black",
+        textDecoration:"none"
+    },
     Item1: {
         marginBottom: "15px",
         marginTop: "15px",
