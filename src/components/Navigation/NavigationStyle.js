@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
         background: "transparent",
         cursor: "pointer",
         textDecoration:"none",
+            color:"black",
         [theme.breakpoints.down('sm')]: {
             position: "relative",
             top: "9px",
