@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         top: "20px",
         left: "500px",
         fontSize: "20px",
+        width:"100%",
         fontWeight: "bolder",
         [theme.breakpoints.down('sm')]: {
             display:"none !important",
