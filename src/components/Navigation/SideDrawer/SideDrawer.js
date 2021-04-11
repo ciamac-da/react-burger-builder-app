@@ -2,7 +2,7 @@ import React from "react";
 import myStyle from "./SideDrawerStyle";
 import { List, ListItem } from "@material-ui/core/";
 import Backdrop from "../../UI/Backdrop/Backdrop";
-import Aux from "../../../hoc/aux";
+import Aux from "../../../hoc/Aux/Aux";
 
 const SideDrawer = (props) => {
   const classes = myStyle();

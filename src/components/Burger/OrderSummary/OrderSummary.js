@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../../../hoc/aux';
+import Aux from '../../../hoc/Aux/Aux';
 import { Typography, List, ListItem, Button } from '@material-ui/core/';
 import myStyle from "./OrderSummaryStyle";
 
