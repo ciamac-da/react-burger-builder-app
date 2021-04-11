@@ -9,10 +9,16 @@ const useStyles = makeStyles((theme) => ({
    textAlign:"center",
    position:"fixed",
    bottom: 0,
+   left:"0px",
    display:"block",
    width:"100vw",
    marginBottom:"0px",
-   height:"33px"
+   height:"33px",
+   [theme.breakpoints.down('sm')]: {
+     padding: "10px",
+     width:"100vw",
+     left:"0px"
+    },
  },
  typo:{
        color:"#fff",

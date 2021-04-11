@@ -2,7 +2,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 const useStyles = withStyles((theme) => ({
 App:{
-    margin: "0",
+    paddingTop: "50px",
     fontFamily:"'Roboto', sans-serif"
 }
 }));

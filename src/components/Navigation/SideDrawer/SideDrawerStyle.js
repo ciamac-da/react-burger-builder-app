@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "gray",
         padding: "32px 16px",
         boxSizing: "border-box",
+        top:"0px",
         transition: "transform 0.3s ease-out",
         [theme.breakpoints.down('sm')]: {
 

@@ -1,17 +1,21 @@
 import React from 'react';
 import Burger from '../../Burger/Burger';
 import { Typography, Button } from '@material-ui/core/';
+import myStyle from "./CheckoutSummaryStyle";
 
 
 const CheckoutSummary = (props) => {
+    const classes = myStyle()
     return ( 
-        <div>
-            <Typography>We hope it tastes well.</Typography>
+        <div className={classes.checkoutSummary}>
+            <Typography className={classes.typo}>We hope it tastes well.</Typography>
             <div>
                 <Burger ingredients={props.ingredients} />
             </div>
-            <Button>Cancel</Button>
-            <Button>Continue</Button>
+        <div className={classes.btnDiv}>
+            <Button onClick={props.purchaseCancelled} className={classes.cancelButton}>&nbsp;&nbsp;Cancel&nbsp;&nbsp;</Button>
+            <Button onClick={props.purchaseContinued} className={classes.continueButton}>Continue</Button>
+        </div>
         </div>
      );
 }

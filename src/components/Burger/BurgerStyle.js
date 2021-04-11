@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme)=>({
     Burger: {
         width: "100%",
-        height: "250px",
+        height: "400px",
         margin: "auto",
         overflow: "auto",
         position:"relative",

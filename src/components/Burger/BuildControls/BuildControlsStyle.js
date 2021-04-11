@@ -12,14 +12,14 @@ const useStyles = makeStyles((theme)=>({
         margin:"auto  !important",
         width:"100%  !important",
         position:"relative",
-        top:"60px",
+        top:"110px",
         display:"flex  !important",
         flexFlow:"column  !important",
         alignItems:"center  !important",
         boxShadow:"0 2px 1px white  !important",
         padding:"10px 0  !important",
         background: "linear-gradient(#F08E4A, #e27b36)  !important",
-        borderRadius:"10px !important"
+        borderRadius:"10px !important",
     },
     MyButton:{
         margin:"20px 0px 20px 0px !important",

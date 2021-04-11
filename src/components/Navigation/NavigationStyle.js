@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
         background: "transparent",
         cursor: "pointer",
         height:"50px",
+        textDecoration:"none",
         [theme.breakpoints.down('sm')]: {
             position: "relative",
             top: "5px",
@@ -63,7 +64,6 @@ const useStyles = makeStyles((theme) => ({
             textAlign: "center",
         },
         "&:hover": {
-            background: "#fff",
             color: "#ff9800",
             borderRadius: "10px",
            
@@ -72,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
     Item2: {
         background: "transparent",
         cursor: "pointer",
+        textDecoration:"none",
         [theme.breakpoints.down('sm')]: {
             position: "relative",
             top: "9px",
@@ -83,8 +84,7 @@ const useStyles = makeStyles((theme) => ({
             textAlign: "center",
         },
         "&:hover": {
-            background: "#fff",
-            color: "#ff9800",
+            color: "#111111",
             borderRadius: "10px",
         }
     },
