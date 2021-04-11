@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Typography, TextField, Button } from "@material-ui/core/";
-import { withStyles } from "@material-ui/core/styles";
+import axios from "../../../axios-orders";
 
 class ContactData extends Component {
   state = {
@@ -11,6 +11,31 @@ class ContactData extends Component {
       postalCode: "",
     },
   };
+
+  orderHandler = (event) =>{
+      event.preventDefault()
+      const order = {
+      ingredients: this.props.ingredients,
+      price: this.state.price,
+      costumer: {
+        name: "Cia",
+        address: {
+          street: "Earth",
+          zipCode: "41678",
+          country: "Italy",
+        },
+        email: "tjah@tjah.com",
+      },
+      deliveryMethod:"Fastest"
+    };
+    axios.post("/orders.json", order)
+    .then(response=>{
+      console.log(response)
+    })
+    .catch(error=>{
+      console.log(error)
+    }) 
+  }
   render() {
     const classes = this.props;
     return (
@@ -71,7 +96,7 @@ class ContactData extends Component {
               color:"white"
              }}
              variant="contained"
-              onClick={this.props.checkoutContinued}
+              onClick={this.orderHandler}
             >
               Order
             </Button>
