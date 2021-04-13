@@ -14,7 +14,10 @@ const CheckoutSummary = (props) => {
             </div>
         <div className={classes.btnDiv}>
             <Button onClick={props.checkoutCancelled} className={classes.cancelButton}>&nbsp;&nbsp;Cancel&nbsp;&nbsp;</Button>
-            <Button onClick={props.checkoutContinued} className={classes.continueButton}>Continue</Button>
+            <Button onClick={props.checkoutContinued} className={classes.continueButton}>
+            {console.log(props.checkoutContinued)}
+            Continue</Button>
+           
         </div>
         </div>
      );

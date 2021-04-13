@@ -1,14 +1,38 @@
 import React from "react";
-import { Typography, TextField, Button } from "@material-ui/core/";
+import { Typography } from "@material-ui/core/";
 import myStyle from "./OrderStyle";
 
-const Order = () => {
+const Order = (props) => {
   const classes = myStyle();
+  const ingredients = [];
+  for(let ingredientName in props.ingredients){
+    ingredients.push({
+      name: ingredientName, 
+      amount:props.ingredients[ingredientName]
+    })
+  }
+
+  const ingredientsOutput = ingredients.map(ig => {
+    return <span
+    style={{
+      textTransform:"capitalize",
+      display:"inline-block",
+      margin:"0 8px",
+      border:"1px solid #ccc",
+      padding:"5px"
+    }}
+     key={ig.name}
+     > {ig.name} ({ig.amount}) </span>
+  })
+
   return (
+      
     <div className={classes.order}>
-      <Typography>Ingredients:</Typography>
+      <Typography>Ingredients: {ingredientsOutput}</Typography>
       <Typography>
-        Price:<strong>$</strong>{" "}
+        Price:<strong>
+     {/*   {Number.parseFloat(props.price.toFixed(2))}  */}
+        $</strong>{" "}
       </Typography>
     </div>
   );
