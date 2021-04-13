@@ -4,7 +4,9 @@ import BurgerBuilder from '../components/BurgerBulder/BurgerBuilder';
 import myStyle from "./AppStyle";
 import Checkout from './Checkout/Checkout';
 import { Route, Switch } from "react-router-dom";
-import Orders from './Orders/Order';
+import Orders from './Orders/Orders';
+
+
 export default myStyle(class App extends Component {
   render(){
     const {classes} = this.props;

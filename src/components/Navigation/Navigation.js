@@ -23,14 +23,14 @@ const Navigation = () => {
       <List>
         <ListItem>
         <NavLink 
-        to="/checkout"
+        to="/orders"
         className={classes.Item2}
          activeStyle={{
          fontWeight: "bold",
          color: "black",
          textDecoration:"none"
           }}>
-         Checkout 
+         Orders
          </NavLink>
          </ListItem>{" "}
       </List>{" "}
