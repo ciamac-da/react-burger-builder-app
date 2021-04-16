@@ -18,15 +18,15 @@ class ContactData extends Component {
       ingredients: this.props.ingredients,
       price: this.state.price,
       costumer: {
-        name: "Cia",
+        name: "",
         address: {
-          street: "Earth",
-          zipCode: "41678",
-          country: "Italy",
+          street: "",
+          zipCode: "",
+          country: "",
         },
-        email: "tjah@tjah.com",
+        email: "",
       },
-      deliveryMethod:"Fastest"
+      deliveryMethod:""
     };
     axios.post("/orders.json", order)
     .then(response=>{
@@ -57,13 +57,15 @@ class ContactData extends Component {
         <Typography style={{ margin: "4px" }} variant="h5">
           Enter your Contact data
         </Typography>
-        <form className={classes.root} noValidate autoComplete="off">
+        <form  className={classes.root} noValidate autoComplete="off">
           <TextField
             id="name"
             name="name"
             label="Your Name"
             variant="filled"
             color="secondary"
+            type="text"
+            required
           />
           <TextField
             id="email"
@@ -71,6 +73,7 @@ class ContactData extends Component {
             label="Your Email"
             variant="filled"
             color="secondary"
+            required
           />
           <TextField
             id="street"
@@ -78,18 +81,22 @@ class ContactData extends Component {
             label="Street"
             variant="filled"
             color="secondary"
+            required
           />
           <TextField
             id="postal"
             name="postal"
             label="Postal Code"
             variant="filled"
+            type="number"
             color="secondary"
+            required
           />
           <div
           style={{position:"relative", top:"5px"}}
           >
             <Button
+            type="submit"
             //color="secondary"
              style={{
               backgroundColor: "green",
